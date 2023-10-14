@@ -11,7 +11,7 @@ build: off  # будем использовать свой скрипт сбор
 install:
   # запускаем SUT (& означает, что в фоновом режиме не блокируем терминал для запуска тестов)
   - java -jar ./rest/artifacts/app-mbank.jar &
-  - chmod +x rest/gradlew
+  - chmod +x ./rest/gradlew
 
 build_script:
   - ./rest/gradlew test --info  # запускаем тест, флаг --info позволяет выводить больше информации
